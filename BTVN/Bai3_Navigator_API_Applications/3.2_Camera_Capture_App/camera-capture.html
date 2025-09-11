@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="camera-capture.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        />
+
+        <title>Camera</title>
+    </head>
+    <body>
+        <h1>Camera Capture App</h1>
+
+        <!-- Camera Zone -->
+        <div id="video-wrapper" class="media-container">
+            <div id="video-placeholder">
+                <i class="fa-solid fa-camera"></i>
+                <p>Click vào đây để bật camera</p>
+            </div>
+
+            <video id="video-stream" autoplay style="display: none"></video>
+        </div>
+
+        <!-- Picture Zone -->
+        <div id="photo-container" class="media-container"></div>
+
+        <!-- Btn -->
+        <div class="actions">
+            <button id="start-camera-btn">Start Camera</button>
+            <button id="stop-camera-btn">Stop Camera</button>
+            <button id="take-photo-btn">Take Photo</button>
+            <button id="download-photo-btn">Download Photo</button>
+        </div>
+
+
+        <script src="./camera-capture.js"></script>
+    </body>
+</html>

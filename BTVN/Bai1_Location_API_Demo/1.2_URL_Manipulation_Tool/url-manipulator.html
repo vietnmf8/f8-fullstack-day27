@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="url-manipulator.css">
+        <title>URL Manipulation Tool</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>URL Manipulation Tool</h1>
+
+            <!-- Form -->
+            <div id="url-form">
+                <div class="form-group">
+                    <label for="protocol">Protocol</label>
+                    <select id="protocol">
+                        <option value="https://">https://</option>
+                        <option value="http://">http://</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="hostname">Hostname</label>
+                    <input type="text" id="hostname" placeholder="google.com"/>
+                </div>
+                <div class="form-group">
+                    <label for="port">Port</label>
+                    <input
+                        type="number"
+                        id="port"
+                        placeholder="3000"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="pathname">Pathname</label>
+                    <input type="text" id="pathname" placeholder=" /products/detail" />
+                </div>
+                <div class="form-group">
+                    <label for="search">Search/Query</label>
+                    <input
+                        type="text"
+                        id="search"
+                        placeholder="?id=123&name=abc"
+                    />
+                </div>
+                <div class="form-group">
+                    <label for="hash">Hash</label>
+                    <input type="text" id="hash" placeholder="#section1" />
+                </div>
+            </div>
+
+            <!-- CTA -->
+            <div class="actions">
+                <button id="btn-navigate">Navigate</button>
+                <button id="btn-replace">Replace</button>
+                <button id="btn-reload">Reload</button>
+            </div>
+
+            <!-- Hiển thị URL  -->
+            <div id="url-preview"></div>
+        </div>
+
+        <script src="./url-manipulator.js"></script>
+    </body>
+</html>
