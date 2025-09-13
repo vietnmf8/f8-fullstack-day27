@@ -46,7 +46,7 @@ startCameraBtn.addEventListener("click", () => {
 /* Nhấn nút Icon Camera */
 videoPlaceholder.addEventListener("click", () => {
     // Nếu không có luồng stream -> phát hành động cho nút bật camera
-    if (!stream) startCameraBtn.click();
+    startCameraBtn.click();
 });
 
 /* Nhấn nút Stop Camera */
